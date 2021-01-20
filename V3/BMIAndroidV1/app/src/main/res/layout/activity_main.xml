@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gold"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:background="@color/green"
+        android:text="@string/height"
+        android:textColor="@color/gold" />
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewHeight"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Enter Height (12 - 96)"
+        android:inputType="number"
+        android:textColor="@color/green"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/textViewWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextHeight"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="34dp"
+        android:background="@color/green"
+        android:text="@string/weight"
+        android:textColor="@color/gold" />
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextHeight"
+        android:layout_alignLeft="@+id/editTextHeight"
+        android:layout_alignTop="@+id/textViewWeight"
+        android:ems="10"
+        android:hint="Enter Weight (1 - 777)"
+        android:inputType="number"
+        android:textColor="@color/green"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/textViewBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextWeight"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="33dp"
+        android:background="@color/green"
+        android:text="@string/bmi"
+        android:textColor="@color/gold" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewBMI"
+        android:layout_alignStart="@+id/editTextWeight"
+        android:layout_alignLeft="@+id/editTextWeight"
+        android:layout_alignBottom="@+id/textViewBMI"
+        android:lines="4"
+        android:maxLines="4"
+        android:textColor="@color/green"
+        android:gravity="center"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewResult"
+        android:layout_alignStart="@+id/textViewResult"
+        android:layout_alignLeft="@+id/textViewResult"
+        android:layout_marginTop="24dp"
+        android:onClick="calculateTheBMI"
+        android:text="@string/calculate" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonCalculate"
+        android:layout_alignEnd="@+id/editTextWeight"
+        android:layout_alignRight="@+id/editTextWeight"
+        android:onClick="clear"
+        android:text="@string/clear" />
+</RelativeLayout>
