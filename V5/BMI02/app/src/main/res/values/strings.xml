@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BMI02</string>
+    <string name="mainPageTitleTv">BMI Calculator</string>
+    <string name="heightTv">Height</string>
+    <string name="weightTv">Weight</string>
+    <string name="heightEtHint">Height</string>
+    <string name="weightEtHint">Weight</string>
+    <string name="calculateBtn">Calculate</string>
+    <string name="clearBtn">Clear</string>
+    <string name="indStatsBtn">Ind Stats</string>
+    <string name="grpStatsBtn">Grp Stats</string>
+    <string name="showImageBtn">Show Image</string>
+    <string name="indStatsTitleTv">Individual Stats</string>
+    <string name="indStatsHintTv">Individual Stats Here</string>
+    <string name="grpStatsTitleTv">Group Stats</string>
+    <string name="backToHomePage">Back To Home Page</string>
+    <string name="imageViewAltTitle">BMI Chart</string>
+    <string name="imageActivityTitleTv">Your BMI Status</string>
+    <string name="imageStatusTvHint">Status</string>
+    <string name="imageViewContentStatus">BMI Status Image</string>
+</resources>

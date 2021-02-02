@@ -230,7 +230,7 @@ public class MainActivity extends AppCompatActivity {
         heightText.setText("");
         weightText.setText("");
         answerText.setText("");
-        imageViewBMIImg.setImageResource(R.drawable.bmiCalculator);
+        imageViewBMIImg.setImageResource(R.drawable.bmicalculator);
         heightText.requestFocus();
     }
 }
